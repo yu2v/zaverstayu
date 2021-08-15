@@ -132,3 +132,71 @@ aside::before {
 nav::before {
   content: "nav";
 }
+
+/*Мои классы*/
+/*Классы header*/
+.header_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.header_main_section1 {
+  width: 33%;
+  display: inline;
+}
+
+.header_main_section2 {
+  display: inline;
+  width: 33%;
+}
+
+.header_main_section3 {
+  display: inline;
+  width: 33%;
+}
+
+/*Классы секции преимущества*/
+
+.benefits {
+}
+
+.benefits_1 {
+}
+.benefits_2 {
+}
+
+.benefits_3 {
+}
+
+.benefits_icon {
+}
+
+.benefits_icon_car {
+}
+
+.benefits_icon_bouquet {
+}
+
+.benefits_icon_photo {
+}
+
+.benefits_text {
+}
+/*Классы секции Популярное*/
+.slider_popular {
+}
+/*Классы секции Разделы каталога*/
+.catalog_sections_container {
+}
+
+.catalog_sections_element {
+  background-color: #ae7c78;
+  opacity: 0.6;
+  border: orangered solid 2px;
+  color: #ffffff;
+}
+
+.map {
+  background-image: url("/img/map.png");
+}

@@ -4,20 +4,296 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Сайт начинающего верстальщика</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Цветочный магазин</title>
   </head>
   <body>
     <header>
-      <nav>На главную</nav>
+      <nav>
+        <ul>
+          <li><a title="" href="#Каталог">Каталог</a></li>
+          <li><a title="" href="#Доставка">Доставка и оплата</a></li>
+          <li><a title="" href="#Отзывы">Отзывы</a></li>
+          <li>
+            <a title="На главную" href="index.html"
+              ><img src="img/logo.svg" alt="LOGO" />
+            </a>
+          </li>
+          <li><a title="" href="#Спецпредложения">Спецпредложения</a></li>
+          <li><a title="" href="#Контакты">Контакты</a></li>
+          <li><a title="" href="#Корзина">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="header_main">
+        <div class="header_main_section1">
+          <h1>Авторские букеты в <em>Перербурге</em></h1>
+          <p>Оригинальные свежие букеты с доставкой по всему городу</p>
+          <button>
+            <a href="#Каталог" title="Смотреть каталог">Смотреть каталог</a>
+          </button>
+        </div>
+        <div class="header_main_section2">
+          <img
+            src="img/anna-tukhfatullina-food-photographer-stylist.png"
+            alt="Букет1"
+          />
+        </div>
+        <div class="header_main_section3">
+          <img src="img/taisiia-shestopal.png" alt="Букет2" />
+        </div>
+      </div>
     </header>
     <main>
-      <article>
-        Первая осознанная работа с каконическим подходом. Будем верстать День
-        первый, регистрация и создание репозитория на github
-      </article>
-      <aside>Здесь могла быть ваша реклама.</aside>
+      <!--Преимущества-->
+      <section class="benefits">
+        <div class="benefits_1">
+          <div class="benefits_icon benefits_icon_car">
+            <img src="img/benefits_icon_car.svg" alt="Доставка" />
+          </div>
+          <div class="benefits_text">
+            <h3>Быстрая доставка</h3>
+            <p>Можем собрать букет и передать его в доставку всего за час.</p>
+          </div>
+        </div>
+        <div class="benefits_2">
+          <div class="benefits_icon benefits_icon_bouquet">
+            <img src="img/benefits_icon_bouquet.svg" alt="Букет" />
+          </div>
+          <div class="benefits_text">
+            <h3>Всегда свежие цветы</h3>
+            <p>
+              Тщательно следим за состоянием цветов, а опытные флористы отбирают
+              для букетов каждый цветок.
+            </p>
+          </div>
+        </div>
+        <div class="benefits_3">
+          <div class="benefits_icon benefits_icon_photo">
+            <img src="img/benefits_icon_photo.svg" alt="Фото букета" />
+          </div>
+          <div class="benefits_text">
+            <h3>Отправляем фото цветов</h3>
+            <p>Перед доставкой сделаем фотографию букета и отправим вам.</p>
+          </div>
+        </div>
+      </section>
+      <!--Слайдер популярное-->
+      <section class="slider_popular">
+        <div>
+          <img src="img/slider_popular.png" alt="Популярное" />
+        </div>
+      </section>
+      <!--Разделы каталога-->
+      <section class="catalog_sections_container">
+        <a href="#Каталог">
+          <div class="catalog_sections_element">
+            <div>
+              <img
+                src="img/catalog_sections_svadebnie_bouquet.png"
+                alt="Свадебный букет"
+              />
+            </div>
+            <h2>Свадебные букеты</h2>
+            <p>Букеты для невест</p>
+          </div>
+        </a>
+        <a href="#Каталог">
+          <div class="catalog_sections_element">
+            <div>
+              <img
+                src="img/catalog_sections_fresh-beautiful-peony-flowers-vase.png"
+                alt="Букеты с пионами"
+              />
+            </div>
+            <h2>Букеты с сезонными пионами</h2>
+            <p>Букеты с пионами</p>
+          </div>
+        </a>
+        <a href="#Каталог">
+          <div class="catalog_sections_element">
+            <div>
+              <img
+                src="img/catalog_sections_сhoose_a_bouquet.png"
+                alt="Выбрать букет"
+              />
+            </div>
+            <h2>Выбрать букет</h2>
+            <p>Букеты в ассортименте</p>
+          </div>
+        </a>
+      </section>
+      <!--Скидка-->
+      <section class="sale">
+        <div>
+          <p>Скидка 10% на первый заказ</p>
+          <p>
+            Если заказываете у нас букет впервые — при оформлении заказа введите
+            промокод «Botanika2021» и получите скидку 10%.
+          </p>
+        </div>
+        <div>
+          <img
+            src="img/sale_florist-makes-beautiful-bouquet-studio.png"
+            alt="Скидка 10%"
+          />
+        </div>
+      </section>
+      <!--4 шага к идеальному букету-->
+      <section>
+        <div class="four_steps">
+          <div class="four_steps_1">
+            <img src="img/4_steps_1_catalog.svg" alt="Заказ" />
+            <h3>Заказ</h3>
+            <p>Выбирите понравившейся букет из каталога и оформите заказ</p>
+          </div>
+          <div class="four_steps_2">
+            <img src="img/4_steps_2_details.svg" alt="Уточнение деталей" />
+            <h3>Уточнение деталей</h3>
+            <p>
+              Наш флорист позвонит вам после оформления заказа, чтобы уточнить
+              детали
+            </p>
+          </div>
+          <div class="four_steps_3">
+            <img src="img/4_steps_3_payment.svg" alt="Оплата" />
+            <h3>Оплата</h3>
+            <p>Оплатить заказ можно онлайн на сайте или при получении</p>
+          </div>
+          <div class="four_steps_4">
+            <img src="img/4_steps_4_delivery.svg" alt="Доставка" />
+            <h3>Доставка</h3>
+            <p>Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
+          </div>
+        </div>
+      </section>
+      <!--Новости-->
+      <section>
+        <div class="countainer">
+          <div>
+            <h2>Следите за нашими новостями</h2>
+            <p>
+              Подписывайтесь на наши соцсети и узнавайте о новинках и акциях
+              первым.
+            </p>
+            <ul>
+              <li>
+                <a href="#instagram"
+                  ><img src="img/instagram_icon.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#facebook"
+                  ><img src="img/facebook_icon.svg" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#twitter"
+                  ><img src="img/twitter_icon.svg" alt="twitter"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <img src="img/news_2_1_samantha-gades.png" alt="news_2_1" />
+            </div>
+            <div>
+              <img src="img/news_2_2_insung-yoon.png" alt="news_2_2" />
+            </div>
+          </div>
+          <div>
+            <img src="img/news_3_demi-he.png" alt="news_3" />
+          </div>
+        </div>
+      </section>
+      <!--Отзывы-->
+      <section>
+        <div class="countaner">
+          <h2>Отзывы</h2>
+          <div>
+            <p>
+              Всё очень понравилось! Быстрое оформление заказа, выбор удобного
+              времени доставки. Всем большое спасибо!
+            </p>
+            <p>Марина</p>
+          </div>
+          <div>
+            <p>
+              Внимательные флористы, вежливые. Магазин находится прям рядом с
+              метро. Букет очень понравился, буду ещё заказывать!
+            </p>
+            <p>Татьяна</p>
+          </div>
+          <div>
+            <p>
+              Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а
+              флористы всегда помогут и точно соберут красивый букет!
+            </p>
+            <p>Ольга</p>
+          </div>
+        </div>
+      </section>
+      <!--Карта, контакты-->
+      <section>
+        <div class="countainer map">
+          <div>
+            <h2>Мы ждем вас</h2>
+            <p>Приходите к нам:</p>
+            <p>Санкт-Петербург, ул. Большая Конюшенная, 19</p>
+            <p>Режим работы:</p>
+            <p>Пн-Вск, с 9-00 до 20-00</p>
+            <p>Позвоните нам:</p>
+            <a href="tel:+78129834719">+ 7 (812) 983-47-19</a>
+            <p>Напишите нам:</p>
+            <a href="mailto:info@botanika.ru">info@botanika.ru</a>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>Подвал сайта</footer>
+    <footer>
+      <div class="countainer">
+        <div>
+          <a title="На главную" href="index.html"
+            ><img src="img/logo.svg" alt="LOGO" />
+          </a>
+        </div>
+        <div>
+          <ul>
+            <li><a title="" href="#Каталог">Каталог</a></li>
+            <li><a title="" href="#Доставка">Доставка и оплата</a></li>
+            <li><a title="" href="#Отзывы">Отзывы</a></li>
+
+            <li><a title="" href="#Спецпредложения">Спецпредложения</a></li>
+            <li><a title="" href="#Контакты">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer_icons">
+          <ul>
+            <li>
+              <a href="#instagram"
+                ><img src="img/footer_instagram_icon.svg" alt="instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#facebook"
+                ><img src="img/footer_facebook_icon.svg" alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#twitter"
+                ><img src="img/footer_twitter_icon.svg" alt="twitter"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
