@@ -137,10 +137,18 @@ nav::before {
 */
 
 /*Мои классы*/
+
+/*global*/
 body {
   width: 1440px;
   padding: 0;
   margin: 0 auto;
+
+  font-family: "Montserrat", "Arial", "sans-serif";
+  font-size: 16px;
+  line-height: 20px;
+  color: #ae7c78;
+  font-weight: 400px;
 }
 
 .reset-title {
@@ -154,67 +162,69 @@ body {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+.button {
+  color: #ffffff;
+
+  position: absolute;
+  width: 285px;
+  height: 80px;
+
+  background: #d89999;
+  border-radius: 40px;
+}
+
+/*Классы header/nav*/
+
+.header_page {
+}
+
 .header_nav {
   width: 1440px;
   padding: 0;
   margin: 0;
 }
 
-.logo_center {
-  display: inline-block;
-  padding: 0 auto;
-  margin: 0 auto;
-  border: lightcoral solid 2px;
-}
-
-.header_nav_left {
-  display: inline-block;
-  margin-left: 120px;
-}
-
-.header_nav_right {
-  display: inline-block;
-  margin-right: 120;
-}
-
-ul.header_nav {
-}
-
-ul.header_nav li {
-  display: inline-block;
-}
-
-/*Классы header*/
 nav.header_nav {
   border-top: 1px solid #ae7c78;
   border-bottom: 1px solid #ae7c78;
 }
 
-.header_page {
+.header_nav a {
+  font-family: "Montserrat", "Arial", "sans-serif";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400px;
+  font-style: normal;
+
+  text-align: center;
+
+  color: #ae7c78;
 }
 
-.header_nav {
+/*main*/
+
+.main_header h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 59px;
+
+  color: #ae7c78;
 }
 
-.header_main {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
+.main_header p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
 
-.header_main_section1 {
-  width: 33%;
-  display: inline;
-}
-
-.header_main_section2 {
-  display: inline;
-  width: 33%;
-}
-
-.header_main_section3 {
-  display: inline;
-  width: 33%;
+  color: #ae7c78;
 }
 
 /*Классы секции преимущества*/
