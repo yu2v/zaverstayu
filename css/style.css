@@ -1,3 +1,4 @@
+/*
 @font-face {
   font-weight: 400;
   font-family: "Montserrat";
@@ -133,8 +134,68 @@ nav::before {
   content: "nav";
 }
 
+*/
+
 /*Мои классы*/
+body {
+  width: 1440px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.reset-title {
+  padding: 0;
+  margin: 0;
+}
+
+.reset-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.header_nav {
+  width: 1440px;
+  padding: 0;
+  margin: 0;
+}
+
+.logo_center {
+  display: inline-block;
+  padding: 0 auto;
+  margin: 0 auto;
+  border: lightcoral solid 2px;
+}
+
+.header_nav_left {
+  display: inline-block;
+  margin-left: 120px;
+}
+
+.header_nav_right {
+  display: inline-block;
+  margin-right: 120;
+}
+
+ul.header_nav {
+}
+
+ul.header_nav li {
+  display: inline-block;
+}
+
 /*Классы header*/
+nav.header_nav {
+  border-top: 1px solid #ae7c78;
+  border-bottom: 1px solid #ae7c78;
+}
+
+.header_page {
+}
+
+.header_nav {
+}
+
 .header_main {
   display: flex;
   flex-direction: row;

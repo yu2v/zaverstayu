@@ -15,38 +15,32 @@
     <title>Цветочный магазин</title>
   </head>
   <body>
-    <header class="header_page">
-      <nav class="header_nav">
-        <div class="header_nav_left">
-          <ul class="header_nav reset-list">
-            <li><a title="" href="#Каталог">Каталог</a></li>
-            <li><a title="" href="#Доставка">Доставка и оплата</a></li>
-            <li><a title="" href="#Отзывы">Отзывы</a></li>
-          </ul>
-        </div>
-        <div class="logo_center">
-          <a title="На главную" href="index.html"
-            ><img src="img/logo.svg" alt="LOGO" width="100" height="32" />
-          </a>
-        </div>
-        <div class="header_nav_right">
-          <ul class="header_nav reset-list">
-            <li><a title="" href="#Спецпредложения">Спецпредложения</a></li>
-            <li><a title="" href="#Контакты">Контакты</a></li>
-            <li><a title="" href="#Корзина">Корзина</a></li>
-          </ul>
-        </div>
+    <header>
+      <nav>
+        <ul>
+          <li><a title="" href="#Каталог">Каталог</a></li>
+          <li><a title="" href="#Доставка">Доставка и оплата</a></li>
+          <li><a title="" href="#Отзывы">Отзывы</a></li>
+          <li>
+            <a title="На главную" href="index.html"
+              ><img src="img/logo.svg" alt="LOGO" />
+            </a>
+          </li>
+          <li><a title="" href="#Спецпредложения">Спецпредложения</a></li>
+          <li><a title="" href="#Контакты">Контакты</a></li>
+          <li><a title="" href="#Корзина">Корзина</a></li>
+        </ul>
       </nav>
     </header>
     <main>
-      <section class="main_header">
-        <div class="main_header_container">
-          <div class="main_header_section1">
+      <section class="header_main">
+        <div class="header_main">
+          <div class="header_main_section1">
             <h1>Авторские букеты в <em>Перербурге</em></h1>
             <p>Оригинальные свежие букеты с доставкой по всему городу</p>
-            <a href="#каталог" class="button">Смотреть каталог</a>
+            <button>Смотреть каталог</button>
           </div>
-          <div class="main_header_section2">
+          <div class="header_main_section2">
             <img
               src="img/anna-tukhfatullina-food-photographer-stylist.png"
               alt="Букет1"
@@ -54,7 +48,7 @@
               height="404"
             />
           </div>
-          <div class="main_header_section3">
+          <div class="header_main_section3">
             <img
               src="img/taisiia-shestopal.png"
               alt="Букет2"
@@ -66,25 +60,36 @@
       </section>
       <!--Преимущества-->
       <section class="benefits">
-        <ul class="reset-list">
+        <ul>
           <li>
             <img src="img/benefits_icon_car.svg" alt="Доставка" />
             <h3>Быстрая доставка</h3>
             <p>Можем собрать букет и передать его в доставку всего за час.</p>
           </li>
           <li>
-            <img src="img/benefits_icon_bouquet.svg" alt="Букет" />
-
-            <h3>Всегда свежие цветы</h3>
-            <p>
-              Тщательно следим за состоянием цветов, а опытные флористы отбирают
-              для букетов каждый цветок.
-            </p>
+            <div class="benefits_2">
+              <div class="benefits_icon benefits_icon_bouquet">
+                <img src="img/benefits_icon_bouquet.svg" alt="Букет" />
+              </div>
+              <div class="benefits_text">
+                <h3>Всегда свежие цветы</h3>
+                <p>
+                  Тщательно следим за состоянием цветов, а опытные флористы
+                  отбирают для букетов каждый цветок.
+                </p>
+              </div>
+            </div>
           </li>
           <li>
-            <img src="img/benefits_icon_photo.svg" alt="Фото букета" />
-            <h3>Отправляем фото цветов</h3>
-            <p>Перед доставкой сделаем фотографию букета и отправим вам.</p>
+            <div class="benefits_3">
+              <div class="benefits_icon benefits_icon_photo">
+                <img src="img/benefits_icon_photo.svg" alt="Фото букета" />
+              </div>
+              <div class="benefits_text">
+                <h3>Отправляем фото цветов</h3>
+                <p>Перед доставкой сделаем фотографию букета и отправим вам.</p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
@@ -100,7 +105,7 @@
             </p>
             <p>30 × 40 см</p>
             <p>3600 руб.</p>
-            <button type="button">Заказать</button>
+            <button>Заказать</button>
           </div>
           <div>
             <img
@@ -118,7 +123,7 @@
       </section>
       <!--Разделы каталога-->
       <section class="catalog_sections_container">
-        <ul class="reset-list">
+        <ul>
           <li>
             <a href="#Каталог">
               <div class="catalog_sections_element">
@@ -185,7 +190,7 @@
       <!--4 шага к идеальному букету-->
       <section>
         <div class="four_steps">
-          <ul class="reset-list">
+          <ul>
             <li>
               <img src="img/4_steps_1_catalog.svg" alt="Заказ" />
               <h3>Заказ</h3>
@@ -221,7 +226,7 @@
               Подписывайтесь на наши соцсети и узнавайте о новинках и акциях
               первым.
             </p>
-            <ul class="reset-list">
+            <ul>
               <li>
                 <a href="#instagram"
                   ><img src="img/instagram_icon.svg" alt="instagram"
@@ -256,7 +261,7 @@
       <section>
         <div class="countaner">
           <h2>Отзывы</h2>
-          <ul class="reset-list">
+          <ul>
             <li>
               <p>
                 Всё очень понравилось! Быстрое оформление заказа, выбор удобного
@@ -285,7 +290,7 @@
       <section>
         <div class="countainer map">
           <h2>Мы ждем вас</h2>
-          <ul class="reset-list">
+          <ul>
             <li>
               <p>Приходите к нам:</p>
               <p>Санкт-Петербург, ул. Большая Конюшенная, 19</p>
@@ -314,7 +319,7 @@
           </a>
         </div>
         <div>
-          <ul class="reset-list">
+          <ul>
             <li><a title="" href="#Каталог">Каталог</a></li>
             <li><a title="" href="#Доставка">Доставка и оплата</a></li>
             <li><a title="" href="#Отзывы">Отзывы</a></li>
@@ -324,7 +329,7 @@
           </ul>
         </div>
         <div class="footer_icons">
-          <ul class="reset-list">
+          <ul>
             <li>
               <a href="#instagram"
                 ><img src="img/footer_instagram_icon.svg" alt="instagram"
